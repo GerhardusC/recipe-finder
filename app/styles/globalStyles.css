@@ -1,0 +1,157 @@
+/* This site is simple enough that all the css goes in one file. */
+body {
+  margin: 0;
+}
+/* Navigation bar styles */
+.navigation-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 60px;
+  background-color: rgb(36, 36, 36);
+  margin: 0;
+  padding: 20px;
+}
+
+.navigation-container a {
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.navigation-container a:hover {
+  transform: scale(1.15);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-form input {
+  width: 300px;
+  height: 30px;
+  font-size: large;
+  text-align: center;
+  background-color: rgb(173, 173, 173);
+  border: none;
+  box-shadow: 2px 2px 5px rgb(133, 133, 133);
+}
+
+.search-form button {
+  height: 30px;
+  width: 150px;
+  font-size: large;
+  color: white;
+  background-color: rgb(88, 131, 144);
+  border: none;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.search-form button:hover {
+  background-color: rgb(72, 72, 72);
+  transform: scale(1.1);
+}
+/* Homepage styles */
+.homepage-container {
+  padding: 30px;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+  box-shadow: 1px 1px 8px gray;
+  border-radius: 10px;
+}
+
+.homepage-ptext {
+  text-align: center;
+  color: gray;
+}
+
+.homepage-form-container {
+  padding: 30px;
+  background-color: rgb(46, 46, 46);
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 2px 2px 5px rgb(100, 100, 100);
+  border-radius: 10px;
+  display: none;
+}
+
+/* Status text */
+.results-display-status {
+  text-align: center;
+  color: gray;
+}
+/* Results display */
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-card {
+  text-decoration: none;
+  text-align: center;
+}
+
+.card {
+  width: 320px;
+  height: 370px;
+  transition: transform 0.2s;
+  box-shadow: 3px 3px 10px gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling once you click on a meal */
+.specific-meal-container {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 2px 2px 8px gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal-category {
+  font-size: larger;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.meal-origin {
+  align-self: flex-start;
+  color: gray;
+  font-size: large;
+  margin: 0;
+}
+
+.back-button {
+  font-size: x-large;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  background-color: rgb(58, 58, 58);
+}

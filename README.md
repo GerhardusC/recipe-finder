@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Recipe Searcher
 
-## Getting Started
+## Table of contents
 
-First, run the development server:
+1. DESCRIPTION
+2. ABOUT
+3. HOW TO INSTALL AND RUN THE APP
+4. HOW TO USE THE APP
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This app is a recipe searcher app. You can search for a type of food,
+for example 'curry', and get an index of a variety of curries. If you click
+on any of the curries, you will be presented with some more details about the curry.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## About
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This app was build using Create-Next-App using the app router. The search term and
+meal id are both dynamic routes that cause data to be fetched server side about
+the meals.
 
-## Learn More
+The initial brief for this task was to have one index page, where you can click on
+any item to view more details about it. I had a tough time deciding on the API to use,
+so I decided that I wanted to add an additional search functionality.
 
-To learn more about Next.js, take a look at the following resources:
+Now instead of a single index page, each valid search result acts as an index page.
+On these pages you can then click on individual meals to view more details. In this
+way I have stayed true to the brief of the task, while keeping things interesting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to install and run the app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Navigate to the project directory and run "npm install".
+Run "npm run dev" to start the development server, and navigate to the
+url given. You can now start using the app.
 
-## Deploy on Vercel
+## How to use the app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Type a simple search term in the search box and click search.
+Complex meals may only return one result, so you may want to
+search simpler terms, such as "apple" or "curry".
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Click on any result to see some more details about the meal.
+
+Click on the burger any time to return home.
